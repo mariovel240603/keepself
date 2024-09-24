@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keepself</title>
+<link rel="stylesheet" href="styles.css">
+    <style>
+
+        /* Estilo del formulario */
+        .form-container {
+            background: rgba(31, 31, 31, 1);
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            margin: auto;
+            margin-top: 100px;
+            box-shadow: 0 0 15px rgb(126, 217, 87);
+        }
+
+        /* Estilo de los campos */
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #7ed957;
+            border-radius: 1px;
+            font-size: 1em;
+        }
+
+        /* Estilo del botón */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(126, 217, 87);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+
+     
+        }
+    </style>
+</head>
+<body>
+  <section class="form-login1">
+        <h4 style="text-align: center; color: rgb(126,217,87);">Registro de Datos</h4>
+        <form action="/enviar_registro" method="POST">
+            <label style="text-align: left; color:rgb(126,217,87); for="nombre">Nombre:</label>
+            <input class="controls" type="text" id="nombre" name="nombre" required>
+
+            <label style="text-align: left; color:rgb(126,217,87);  for="apellido">Apellido:</label>
+            <input class="controls" type="text" id="apellido" name="apellido" required>
+
+            <label style="text-align: left; color:rgb(126,217,87); for="email">Correo Electrónico:</label>
+            <input class="controls" type="email" id="email" name="email" required>
+
+            <label style="text-align: left; color:rgb(126,217,87); for="password">Contraseña:</label>
+            <input class="controls" type="password" id="password" name="password" required>
+
+            <label style="text-align: left; color:rgb(126,217,87); for="peso">Peso (kg):</label>
+            <input class="controls" type="number" id="peso" name="peso" step="0.1" required>
+
+            <label style="text-align: left; color:rgb(126,217,87); for="altura">Altura (cm):</label>
+            <input class="controls" type="number" id="altura" name="altura" required>
+
+            <input type="submit" value="Registrar" href="Login.html">
+        </form>
+    </section>
+</body>
+</html>

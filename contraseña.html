@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+<link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7ed795;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        input[type="email"], input[type="submit"] {
+            
+
+ /*boton*/     
+}
+        input[type="submit"] {
+            background-color: #7ed957;
+            color: white;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background-color: darkgreen;
+        }
+        .message {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #7ed957;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+ <section class="form-login2">
+    <div class="">
+        <h4>Recuperar Contraseña</h4>
+        <h1>Ingresa tu correo electrónico para restablecer tu contraseña:</h1>
+        <form action="recuperacontraseña.php" method="POST">
+            <input class="controls" type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="submit" value="Enviar">
+        </form>
+        <div class="message">
+            <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+
+        </div>
+    </div>
+ </section>
+</body>
+</html>
